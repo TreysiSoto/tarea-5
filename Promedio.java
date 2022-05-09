@@ -12,78 +12,78 @@ public class Promedio {
     public double exaFinal;
     public double prom;
 
-    Promedio(double n1, double n2, double n3, double n4, Double emc, double efc) {
-        setTa1(n1);
-        setTa2(n2);
-        setTa3(n3);
-        setTa4(n4);
-        setMedioCurso(emc);
-        setExaFinal(efc);
+    Promedio(double num1, double num2, double num3, double num4, Double emc, double efc) {
+        establecerTa1(num1);
+        establecerTa2(num2);
+        establecerTa3(num3);
+        establecerTa4(num4);
+        establecerMedioCurso(emc);
+        establecerExaFinal(efc);
     }
 
-    void setTa1(double n1) {
-        ta1 = n1;
+    void establecerTa1(double num1) {
+        ta1 = num1;
     }
 
-    double getTa1() {
+    double obtenerTa1() {
         return ta1;
     }
 
-    void setTa2(double n2) {
-        ta2 = n2;
+    void establecerTa2(double num2) {
+        ta2 = num2;
     }
 
-    double getTa2() {
+    double obtenerTa2() {
         return ta2;
     }
 
-    void setTa3(double n3) {
-        ta3 = n3;
+    void establecerTa3(double num3) {
+        ta3 = num3;
     }
 
-    double getTa3() {
+    double obtenerTa3() {
         return ta3;
     }
 
-    void setTa4(double n4) {
-        ta4 = n4;
+    void establecerTa4(double num4) {
+        ta4 = num4;
     }
 
-    double getTa4() {
+    double obtenerTa4() {
         return ta4;
     }
 
-    double getSumatoriaDeNotas() {
-        return sumatoria = (getTa1() + getTa2() + getTa3() + getTa4());
+    double obtenerSumatoriaDeNotas() {
+        return sumatoria = (obtenerTa1() + obtenerTa2() + obtenerTa3() + obtenerTa4());
     }
 
-    double getPromSumatoria() {
-        return promSumatoria = getSumatoriaDeNotas() / 4;
+    double obtenerPromSumatoria() {
+        return promSumatoria = obtenerSumatoriaDeNotas() / 4;
     }
 
-    void setMedioCurso(double emc) {
+    void establecerMedioCurso(double emc) {
         medioCurso = emc;
     }
 
-    double getMedioCurso() {
+    double obtenerMedioCurso() {
         return medioCurso;
     }
 
-    void setExaFinal(double efc) {
+    void establecerExaFinal(double efc) {
         exaFinal = efc;
     }
 
-    double getExaFinal() {
+    double obtenerExaFinal() {
         return exaFinal;
     }
 
-    double getSuma() {
-        return suma = getPromSumatoria() + getExaFinal() + getMedioCurso();
+    double obtenerSuma() {
+        return suma = obtenerPromSumatoria() + obtenerExaFinal() + obtenerMedioCurso();
 
     }
 
     void calcularPromedio() {
-        prom = getSuma() / 3;
+        prom = obtenerSuma() / 3;
         System.out.println("su promedio es: " + prom);
     }
 
