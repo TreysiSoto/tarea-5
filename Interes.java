@@ -14,7 +14,7 @@ public class Interes {
         establecerNumero3(tiempo);
     }
 
-    // metodos
+    // encapsulamiento
     void establecerNumero1(double capital) {
         numero1 = capital;
     }
@@ -40,7 +40,7 @@ public class Interes {
         return numero3;
     }
 
-    // encapsulamiento
+    // metodo
     void calcularMontoAcumulado() {
         M = Math.pow((obtenerNumero2() + 1), obtenerNumero3()) * obtenerNumero1();
         System.out.println("el monto acumulado seria: " + M);
